@@ -1,0 +1,221 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  background-image: url(https://fondosmil.com/fondo/24254.jpg);
+  background-attachment: fixed;
+}
+body .nav {
+  width: 100%;
+  height: 70px;
+  background-color: #eeeeee;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s;
+  transform: translateX(0%);
+}
+body .nav img {
+  display: none;
+}
+body .nav .nav-bar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding-top: 8px;
+}
+body .nav .nav-bar ul a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #0c0c0c;
+  font-size: 1.3rem;
+}
+body .header-1 {
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin: 0%;
+  padding: 0%;
+  background-color: transparent;
+  display: grid;
+}
+body .header-1 .header-2 {
+  width: 92%;
+  height: 80vh;
+  margin: 0%;
+  padding: 0%;
+  -webkit-backdrop-filter: blur(0.8px);
+          backdrop-filter: blur(0.8px);
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .header-1 .header-2 h1 {
+  text-align: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+  font-weight: 100;
+  padding: 0%;
+  margin: 0%;
+}
+body .header-1 .header-2 h2 {
+  text-align: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 2%;
+}
+body .header-1 .header-2 button {
+  background: #0c0c0c;
+  width: 200px;
+  height: 40px;
+}
+body .about-1 {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  background-color: transparent;
+}
+body .about-1 .about-2 {
+  width: 92%;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+body .about-1 .about-2 h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+}
+body .about-1 .about-2 p {
+  text-align: justify;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+body .about-1 .about-2 .cards {
+  width: 100%;
+  height: 70vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+body .about-1 .about-2 .card {
+  width: 300px;
+  height: 350px;
+  background-color: aqua;
+  margin: 10px;
+  border-radius: 10px;
+}
+body .about-1 .about-2 .card .card-2 {
+  width: 100%;
+  height: 50%;
+  background-color: #000000;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+body .about-1 .about-2 .card h2 {
+  text-align: center;
+}
+body .projects-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  display: grid;
+}
+body .projects-1 .projects-2 {
+  width: 92%;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+}
+body .projects-1 .projects-2 h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+}
+body .contact-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  display: grid;
+}
+body .contact-1 .contact-2 {
+  width: 92%;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+}
+body .contact-1 .contact-2 h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+}
+
+.navmobile {
+  width: 100%;
+  height: 100vh;
+  background-color: #eeeeee;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  transform: translateX(0%);
+}
+.navmobile img {
+  display: none;
+}
+.navmobile .nav-bar ul {
+  display: grid;
+  margin: auto;
+  gap: 30px;
+  list-style: none;
+  padding-top: 8px;
+}
+.navmobile .nav-bar ul a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #0c0c0c;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 950px) {
+  .nav {
+    justify-content: flex-end !important;
+  }
+  .nav .nav-bar {
+    display: none;
+  }
+  .nav img {
+    display: inline !important;
+    cursor: pointer;
+  }
+  .nav img:hover {
+    width: 60px;
+  }
+  body .about-1 {
+    height: auto;
+  }
+  body .about-1 .about-2 {
+    height: auto;
+  }
+  body .about-1 .about-2 .cards {
+    height: auto;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=scss.css.map */

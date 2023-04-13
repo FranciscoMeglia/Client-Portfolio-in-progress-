@@ -1,0 +1,11 @@
+@media screen and (max-width: 950px) {
+
+    .nav-bar {
+        display: none;
+    }
+  
+    .cards {
+      background-color: #e41c1c;
+      flex-wrap: wrap;
+    }
+  }
